@@ -11,7 +11,10 @@ def countword() -> int:
     return counter+1     
 
 def revword(word:str) -> str:
-    st = ''
+    st = ''.rstrip()
     for letter in range(0,len(word)):
         st = word[letter] + st
-    return st
+    return st.lower()
+
+
+    
